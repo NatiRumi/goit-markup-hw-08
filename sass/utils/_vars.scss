@@ -1,0 +1,38 @@
+$colors: (
+    'text': #757575,
+    'brend': #2196f3,
+    'logo': #000000,
+    'title': #212121,
+    'button': #ffffff,
+    'background': #f5f4fa,
+    'border': #eeeeee,
+    'icon': #afb1b8, 
+    'borderHeader': #ECECEC,
+    'gradient': rgba(47, 48, 58, 0.4),
+    'footer': #2f303a,
+);
+
+@function getColor($key) {
+    @return map-get($colors, $key);
+}
+
+
+
+$timingFunction: cubic-bezier(0.4, 0, 0.2, 1);
+
+
+$fonts: (
+  'main': "Roboto", 
+  'logo': "Raleway",
+);
+
+@function getFont($key) {
+    @return map-get($fonts, $key);
+}
+
+
+@mixin padding($padding) {
+    padding-top: $padding;
+    padding-bottom: $padding;
+}
+

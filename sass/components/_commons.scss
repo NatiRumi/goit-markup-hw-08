@@ -1,0 +1,132 @@
+body {
+    background-color: getColor('button');
+    font-family: getFont('main'), sans-serif;
+    font-size: 14px;
+    line-height: 1.17;
+    color: getColor('text');
+}
+
+* {
+outline: 1px solid red;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 480px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1200px;
+    }
+}
+
+Li {
+    list-style: none;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+ul {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+img {
+    display: block;
+    min-width: 100%;
+    height: auto;
+}
+
+.title-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+
+%header {
+    font-weight: 700;
+    font-size: 28px;
+    letter-spacing: 1.08px;
+    color: getColor('title');
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+@media (min-width: 1200px) {
+    %header {
+        font-size: 36px;
+        margin-bottom: 50px;
+    }
+}
+
+
+%footerHeader {
+    font-weight: 700;
+    color: getColor('button');
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+
+%position {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+%icon {
+    display: block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: getColor('icon');
+    transition: background-color 250ms $timingFunction, color 250ms $timingFunction;
+
+    svg {
+        display: block;
+        width: 20px;
+        height: 20px;
+        fill: currentColor;
+    }
+
+    &:focus,
+    &:hover {
+        background-color: getColor('brend');
+        color: getColor('button');
+    }
+}
+
+%formBorder {
+    border: 1px solid getColor('brend');
+    cursor: pointer;
+}
+
+

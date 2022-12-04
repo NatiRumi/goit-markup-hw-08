@@ -1,0 +1,85 @@
+.hero-section {
+    background: linear-gradient(to right, getColor('gradient'), getColor('gradient')), url(../images/back-mob.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .hero-section {
+    background: linear-gradient(to right, getColor('gradient'), getColor('gradient')), url(../images/back-mobx2.jpg);
+    }
+}
+
+@media (min-width: 768px) {
+    .hero-section {
+        background: linear-gradient(to right, getColor('gradient'), getColor('gradient')), url(../images/back-tabl.jpg);
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero-section {
+            background: linear-gradient(to right, getColor('gradient'), getColor('gradient')), url(../images/back-tablx2.jpg);
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .hero-section {
+        background: linear-gradient(to right, getColor('gradient'), getColor('gradient')), url(../images/back-img.jpg);
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero-section {
+            background: linear-gradient(to right, getColor('gradient'), getColor('gradient')), url(../images/back-imgx2.jpg);
+        }
+    }
+}
+
+@media (min-width: 1600px) {
+    .hero-section {
+        background-size: 1600px;
+    }
+}
+
+
+.hero {
+    text-align: center;
+    @include padding(118px);
+}
+
+.hero__title {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.36;
+    letter-spacing: 2.64px;
+    color: getColor('button');
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.hero__button {
+    display: inline-block;
+    cursor: pointer;
+    padding-right: 24px;
+    padding-left: 24px;
+}
+
+@media (min-width: 1200px) {
+    .hero {
+        @include padding(200px);
+    }
+
+    .hero__title {
+        font-size: 44px;
+    }
+
+    .hero__button {
+        padding-right: 32px;
+        padding-left: 32px;
+    }
+}

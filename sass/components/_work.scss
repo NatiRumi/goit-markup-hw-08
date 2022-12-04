@@ -1,0 +1,39 @@
+.work {
+    padding-bottom: 94px;
+
+    h2 {
+        @extend %header;
+    }
+}
+
+.work__card {
+    @extend %position;
+
+    li {
+        position: relative;
+    }
+}
+
+.work__text {
+    position: absolute;
+    bottom: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.42px;
+    width: 370px;
+    height: 70px;
+    margin: 0;
+    color: getColor('button');
+    background-color: rgba(47, 48, 58, 0.8);
+    text-align: center;
+    padding-top: 27px;
+}
+
+@media (max-width: 1199px) {
+    .work {
+        display: none;
+    }
+}
+
+
+

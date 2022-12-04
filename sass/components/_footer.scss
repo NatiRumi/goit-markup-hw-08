@@ -1,0 +1,149 @@
+footer {
+    background-color: getColor('footer');
+    text-align: center;
+}
+
+.footer {
+    @include padding(60px);
+}
+
+.footer__position { 
+    margin-bottom: 60px;    
+}
+
+.adress {
+    li {
+        margin-bottom: 9px;
+    }
+
+    li:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.adress__link {
+    line-height: 1.71;
+    letter-spacing: 0.42px;
+    color: getColor('text');
+    font-style: normal;
+    transition: color 250ms $timingFunction;
+
+    &:focus,
+    &:hover {
+        color: getColor('button');
+    }
+}
+
+.footer__network {
+    margin-bottom: 60px;
+
+    h2 {
+        @extend %footerHeader;
+    }
+
+    ul {
+        @extend %position;
+        width: 206px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+.footer__icon {
+    background-color: #45454a;
+    @extend %icon;
+}
+
+
+.footer__registration {
+    h2 {
+        @extend %footerHeader;
+    }
+}
+
+.footer__form {
+    input {
+        display: block;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        background-color: #2f303a;
+        border-radius: 4px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    [placeholder] {
+        color: getColor('button');
+        padding-left: 16px;
+        display: block;
+        height: 50px;
+    }
+}
+
+
+.button--footer {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 28px;
+    padding-right: 28px;
+    display: flex;
+    align-items: center;
+
+    svg {
+        display: block;
+        width: 24px;
+        height: 24px;
+        margin-left: 10px;
+    }
+}
+
+@media (min-width: 768px) {
+    .footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+    .footer__registration {
+        width: 100%;
+        margin-left: 160px;
+        margin-right: 160px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .footer {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        text-align: start;
+    }
+    
+    .footer__position {
+        margin-bottom: 0;
+    }
+
+    .footer__network {
+        margin-bottom: 0;
+    }
+
+    .footer__registration {
+        width: 50%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .footer__form {
+        display: flex;
+
+        input {
+            min-width: 358px;
+            margin-bottom: 0;
+        }
+    }
+
+    .button--footer {
+        margin-left: auto;
+        margin-right: 0;
+    }
+}
