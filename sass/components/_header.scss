@@ -10,9 +10,6 @@
     flex-grow: 1;
 }
 
-// nav {
-//     display: flex;
-// }
 
 @media (max-width: 767px) {
     .header__menu {
@@ -88,10 +85,6 @@
     color: getColor('text');
     align-items: center;
     transition: color 250ms $timingFunction;
-
-    // &:not(:last-child) {
-    //     margin-right: 30px;
-    // }
 
     &:focus,
     &:hover {
