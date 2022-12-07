@@ -6,6 +6,10 @@ body {
   color: #757575;
 }
 
+* {
+  outline: 1px solid red;
+}
+
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -331,7 +335,7 @@ textarea:focus, textarea:hover, .modalForm__input:focus, .modalForm__input:hover
 }
 
 .mob-menu {
-  margin-bottom: 300px;
+  margin-bottom: 200px;
 }
 .mob-menu li {
   margin-bottom: 35px;
@@ -1253,7 +1257,15 @@ textarea {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.checkbox p {
   font-size: 12px;
+  color: #757575;
+  display: block;
+  margin: 0;
 }
 
 .checkbox__input {
@@ -1261,6 +1273,7 @@ textarea {
   -moz-appearance: none;
   appearance: none;
   position: absolute;
+  top: 50%;
 }
 
 .checkbox__input:checked + .checkbox__icone {
@@ -1270,7 +1283,7 @@ textarea {
 }
 
 .checkbox__icone {
-  display: inline-block;
+  display: block;
   width: 16px;
   height: 15px;
   border: 2px solid #000000;
