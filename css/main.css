@@ -675,14 +675,18 @@ textarea:focus, textarea:hover, .modalForm__input:focus, .modalForm__input:hover
 }
 
 .team__list {
-  padding-left: 122px;
-  padding-right: 122px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .team__list li {
   border: none;
   -webkit-box-shadow: none;
           box-shadow: none;
   margin-bottom: 0;
+}
+.team__list li:not(last-chield) {
+  margin-right: 10px;
 }
 
 @media screen and (min-width: 768px) {
@@ -703,10 +707,6 @@ textarea:focus, textarea:hover, .modalForm__input:focus, .modalForm__input:hover
     -ms-flex-preferred-size: 354px;
         flex-basis: 354px;
   }
-  .team__list {
-    padding-left: 74px;
-    padding-right: 74px;
-  }
 }
 @media screen and (min-width: 1200px) {
   .team {
@@ -717,10 +717,6 @@ textarea:focus, textarea:hover, .modalForm__input:focus, .modalForm__input:hover
     -ms-flex-preferred-size: 270px;
         flex-basis: 270px;
     margin-bottom: 0;
-  }
-  .team__list {
-    padding-left: 32px;
-    padding-right: 32px;
   }
   .team__info {
     padding-top: 30px;
