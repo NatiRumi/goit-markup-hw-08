@@ -6,10 +6,6 @@ body {
   color: #757575;
 }
 
-* {
-  outline: 1px solid red;
-}
-
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -335,7 +331,7 @@ textarea:focus, textarea:hover, .modalForm__input:focus, .modalForm__input:hover
 }
 
 .mob-menu {
-  margin-bottom: 302px;
+  margin-bottom: 300px;
 }
 .mob-menu li {
   margin-bottom: 35px;
