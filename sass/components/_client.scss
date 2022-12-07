@@ -44,7 +44,7 @@
     }
 }
 
-@media (min-width: 768px){
+@media screen and (min-width: 768px){
     .client__list>li {
         flex-basis: calc((100% - 60px)/3);
 
@@ -54,7 +54,7 @@
     }
 }
 
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
     .client {
         @include padding(94px);
     }

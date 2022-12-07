@@ -48,7 +48,7 @@
 
 
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
     .feature {
         display: flex;
         flex-wrap: wrap;
@@ -67,7 +67,7 @@
 }
 
 
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
     .feature {
         @include padding(94px);
     }

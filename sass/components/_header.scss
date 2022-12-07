@@ -11,7 +11,7 @@
 }
 
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
     .header__menu {
         display: none;
     }
@@ -107,7 +107,7 @@
     height: 16px;
 }
 
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
     .site-nav {
         margin-right: 0;
     }

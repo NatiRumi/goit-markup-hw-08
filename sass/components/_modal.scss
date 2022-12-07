@@ -26,7 +26,7 @@
     left: 50%;
     transform: translate(-50%, -50%) scale(1) rotate(0);
 
-    width: 450px;
+    width: 320px;
     min-height: 609px;
 
     background-color: getColor('button');
@@ -204,7 +204,13 @@ textarea {
     }
 }
 
-@media (min-width: 1200px) {
+@media screen and (min-width: 480px) {
+    .modal  {
+        min-width: 450px;
+    } 
+}
+
+@media screen and (min-width: 1200px) {
     .modal {
         min-width: 528px;
         min-height: 581px;

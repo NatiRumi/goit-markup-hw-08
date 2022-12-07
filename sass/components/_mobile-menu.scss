@@ -32,7 +32,7 @@
 }
 
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
     .menu-toggle {
         display: none;
     }
@@ -119,7 +119,9 @@
     display: flex;
     
     li {
-        margin-right: 20px;
+        padding-right: 10px;
+        padding-left: 10px;
+        border-right: 1px solid rgba(33, 33, 33, 0.2);
 
         a {
             font-weight: 500;
@@ -129,8 +131,14 @@
             color: getColor('brend');
         }
     }
+
+    & li:first-child {
+        padding-left: 0;
+    }
     
     & li:last-child {
         margin-right: 0;
+        padding-right: 0;
+        border-right: none;
     }
 }
