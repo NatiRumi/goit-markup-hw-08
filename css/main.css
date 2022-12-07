@@ -6,10 +6,6 @@ body {
   color: #757575;
 }
 
-* {
-  outline: 1px solid red;
-}
-
 .container {
   padding-left: 15px;
   padding-right: 15px;
