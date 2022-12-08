@@ -8,6 +8,8 @@
     padding-left: 40px;
     z-index: 22;
     background-color: getColor('button');
+    display: flex;
+    flex-direction: column;
 
     transform: translateX(100%);
 }
@@ -67,7 +69,6 @@
 }
 
 .mob-menu {
-    // margin-bottom: 200px;
 
     li {
         margin-bottom: 35px;
