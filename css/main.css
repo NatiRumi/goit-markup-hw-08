@@ -201,6 +201,11 @@ textarea:focus, textarea:hover, .modalForm__input:focus, .modalForm__input:hover
   background-color: #2196f3;
 }
 
+@media screen and (max-width: 767px) {
+  .current::after {
+    display: none;
+  }
+}
 .auth-nav {
   margin-left: auto;
 }
@@ -360,13 +365,16 @@ textarea:focus, textarea:hover, .modalForm__input:focus, .modalForm__input:hover
   color: #2196f3;
 }
 
+.mob-menu__contacts {
+  margin-top: auto;
+}
+
 .mob-menu__tel {
   font-weight: 500;
   font-size: 34px;
   letter-spacing: 0.68;
   line-height: 1.17;
   color: #2196f3;
-  margin-top: auto;
   margin-bottom: 32px;
 }
 
@@ -383,8 +391,6 @@ textarea:focus, textarea:hover, .modalForm__input:focus, .modalForm__input:hover
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 .mob-menu__social li {
   padding-right: 10px;
@@ -407,6 +413,27 @@ textarea:focus, textarea:hover, .modalForm__input:focus, .modalForm__input:hover
   border-right: none;
 }
 
+@media screen and (max-width: 389px) {
+  .mob-menu__social {
+    width: 180px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .mob-menu__social li {
+    width: 85px;
+  }
+  .mob-menu__social li:nth-child(-n+2) {
+    margin-bottom: 10px;
+  }
+  .mob-menu__social li:nth-child(3) {
+    padding-left: 0;
+  }
+  .mob-menu__social li:last-child {
+    margin-right: 0;
+    padding-right: 0;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+  }
+}
 .logo {
   font-family: "Raleway", sans-serif;
   font-size: 26px;
