@@ -1,40 +1,40 @@
 .hero-section {
-    // background-repeat: no-repeat;
-    // background-position: center;
-    // background-size: cover;
-    background: linear-gradient(to right, getColor('gradient'), getColor('gradient')), url(../images/back-mob.jpg) center / cover no-repeat;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(to right, getColor('gradient'), getColor('gradient')), url(../images/back-mob.jpg);
 }
 
 @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .hero-section {
-        background: linear-gradient(to right, getColor('gradient'), getColor('gradient')), url(../images/back-mobx2.jpg) center / cover no-repeat;
+        background-image: linear-gradient(to right, getColor('gradient'), getColor('gradient')), url(../images/back-mobx2.jpg);
     }
 }
 
 @media screen and (min-width: 768px) {
     .hero-section {
-        background: linear-gradient(to right, getColor('gradient'), getColor('gradient')), url(../images/back-tabl.jpg) center / cover no-repeat;
+        background-image: linear-gradient(to right, getColor('gradient'), getColor('gradient')), url(../images/back-tabl.jpg);
     }
 
     @media screen and (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
         .hero-section {
-            background: linear-gradient(to right, getColor('gradient'), getColor('gradient')), url(../images/back-tablx2.jpg) center / cover no-repeat;
+            background-image: linear-gradient(to right, getColor('gradient'), getColor('gradient')), url(../images/back-tablx2.jpg);
         }
     }
 }
 
 @media screen and (min-width: 1200px) {
     .hero-section {
-        background: linear-gradient(to right, getColor('gradient'), getColor('gradient')), url(../images/back-img.jpg) center / cover no-repeat;
+        background-image: linear-gradient(to right, getColor('gradient'), getColor('gradient')), url(../images/back-img.jpg);
     }
 
     @media screen and (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
         .hero-section {
-            background: linear-gradient(to right, getColor('gradient'), getColor('gradient')), url(../images/back-imgx2.jpg) center / cover no-repeat;
+            background-image: linear-gradient(to right, getColor('gradient'), getColor('gradient')), url(../images/back-imgx2.jpg);
         }
     }
 }
